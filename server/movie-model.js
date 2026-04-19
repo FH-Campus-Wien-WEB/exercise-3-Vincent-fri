@@ -42,7 +42,52 @@ const movies = {
     Poster: "https://m.media-amazon.com/images/M/MV5BMTY5MzYzNjc5NV5BMl5BanBnXkFtZTYwNTUyNTc2._V1_SX300.jpg",
     Metascore: 75,
     imdbRating: 8.1
-  }
+  },
+
+  tt004: {
+  imdbID: "tt004",
+  Title: "Shrek",
+  Released: "2001-05-18",
+  Runtime: 90,
+  Genres: ["Animation", "Adventure", "Comedy"],
+  Directors: ["Andrew Adamson", "Vicky Jenson"],
+  Writers: ["William Steig", "Ted Elliott", "Terry Rossio"],
+  Actors: ["Mike Myers", "Eddie Murphy", "Cameron Diaz"],
+  Plot: "A mean lord exiles fairytale creatures to the swamp of a grumpy ogre, who must go on a quest to rescue a princess.",
+  Poster: "https://m.media-amazon.com/images/M/MV5BN2FkMTRkNTUtYTI0NC00ZjI4LWI5MzUtMDFmOGY0NmU2OGY1XkEyXkFqcGc@._V1_SX300.jpg",
+  Metascore: 84,
+  imdbRating: 7.9
+},
+
+tt005: {
+  imdbID: "tt005",
+  Title: "The Wolf of Wall Street",
+  Released: "2013-12-25",
+  Runtime: 180,
+  Genres: ["Biography", "Crime", "Drama"],
+  Directors: ["Martin Scorsese"],
+  Writers: ["Terence Winter"],
+  Actors: ["Leonardo DiCaprio", "Jonah Hill", "Margot Robbie"],
+  Plot: "Based on the true story of Jordan Belfort, from his rise to a wealthy stockbroker to his fall involving crime and corruption.",
+  Poster: "https://m.media-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+  Metascore: 75,
+  imdbRating: 8.2
+},
+
+tt006: {
+  imdbID: "tt006",
+  Title: "The Gentlemen",
+  Released: "2019-12-03",
+  Runtime: 113,
+  Genres: ["Action", "Crime"],
+  Directors: ["Guy Ritchie"],
+  Writers: ["Guy Ritchie"],
+  Actors: ["Matthew McConaughey", "Charlie Hunnam", "Henry Golding"],
+  Plot: "An American expat tries to sell off his highly profitable marijuana empire in London, triggering plots and schemes.",
+  Poster: "https://m.media-amazon.com/images/M/MV5BMjE2ZjQ4ZGMtZjFhMi00NmI5LTliNjEtODczMWMxNjliZjgxXkEyXkFqcGc@._V1_SX300.jpg",
+  Metascore: 51,
+  imdbRating: 7.8
+}
 }
 
 

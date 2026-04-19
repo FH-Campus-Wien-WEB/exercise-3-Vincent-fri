@@ -25,15 +25,6 @@ img {
   max-width: 200px;   
 }
 
-article {
-  background-color: white;  
-  border-radius: 12px;      
-  padding: 20px;            
-  margin: 20px 0;          
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);  
-  width: 384px;  
-}
-
 span.genre {
   background-color: #e7f1ff;  
   color: #1d4ed8;           
@@ -65,22 +56,113 @@ ul {
 }
 
 /* Task 2.1. Lay out the childs of the 'body' using Grid Template Areas. */
+body {
+  display: grid;
+  grid-template-areas:
+    "h"
+    "n"
+    "m"
+    "f";
+}
+header {
+  grid-area: h;
+}
+
+nav {
+  grid-area: n;
+}
+
+main {
+  grid-area: m;
+}
+
+footer {
+  grid-area: f;
+}
+@media (min-width: 768px) {
+  body {
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      "h h"
+      "n m"
+      "f f";
+    height: 100vh;
+  }
+
+  main {
+    overflow-y: auto;
+  }
+}
 
 
 /* Task 3.1. Make the header element a flex container and center its children
    vertically and horizontally.
  */
-
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* Task 3.2. Make the list items of the unordered list in the nav element a flex container, 
    use column direction and center the child items
  */
-
+ nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+}
+nav button {
+  flex: 1;
+}
 /* Task 3.3. Make the main element a Flexbox container */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px;
+}
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
+  flex: 0 0 calc(33.333% - 20px);
+  box-sizing: border-box;
+
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
+}
+article button {
+  margin-top: auto;
+}
 
 /* Task 3.4. Make the footer's ul a Flexbox container */
-
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* From here on styling from exercise 1 */
+header, footer {
+  color: black;             
+}
+header {
+  font-size: 24px;
+  font-weight: bold;
+}
 
+footer {
+  font-size: 14px;
+}
+nav h2 {
+  font-size: 24px;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
