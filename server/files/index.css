@@ -1,14 +1,49 @@
 @import url(base.css);
 
+html, body {
+  height: 100vh;
+  margin: 0;     
+}
+
+body {
+  font-family: 'Calibri';
+  background-color: #f0f0f0;
+}
+
 h1 {
-  font-size: 200%;
+  font-size: 200%;  
+  font-weight: bold;  
   margin: 8px 0px;
 }
 
-/* Constrain the page to the viewport */
-html, body {
-  height: 100vh;
+p {
+  font-size: 18px;  
 }
+
+img {
+  border-radius: 8px;  
+  max-width: 200px;   
+}
+
+article {
+  background-color: white;  
+  border-radius: 12px;      
+  padding: 20px;            
+  margin: 20px 0;          
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);  
+  width: 384px;  
+}
+
+span.genre {
+  background-color: #e7f1ff;  
+  color: #1d4ed8;           
+  padding: 4px 10px;        
+  border-radius: 12px;      
+  margin-right: 6px;         
+  font-size: 15px;           
+  font-weight: bold;        
+}
+
 
 /* Center the nav's header and list */
 nav {
@@ -48,30 +83,4 @@ ul {
 
 
 /* From here on styling from exercise 1 */
-img {
-  border-radius: 12px;
-}
 
-article {
-  background-color: lightgray;
-  border-radius: 16px;
-  padding: 16px;
-  width: 384px;
-  margin: 8px;
-}
-
-a {
-  color: beige;
-}
-
-span {
-  margin-right: 4px;
-}
-
-.genre {
-  padding: 4px 8px;
-  border: solid black 1px;
-  border-radius: 6px;
-  background-color: darkgray;
-  font-weight: bold;
-}
